@@ -1,0 +1,2 @@
+# add to crontab
+* * * * * /home/orangepi/auto_check/check_pulse.sh
