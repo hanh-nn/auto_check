@@ -1,3 +1,9 @@
 # add to crontab
 crontab -e
+
 * * * * * /home/orangepi/auto_check/check_pulse.sh
+*/5 * * * * /home/orangepi/auto_check/check_internet.sh
+
+
+chmod +x auto_check/check_pulse.sh
+chmod +x auto_check/check_internet.sh
