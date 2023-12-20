@@ -3,6 +3,11 @@
 crontab -r
 
 
+# check current crontab
+
+crontab -l
+
+
 # how to install 
 
 su orangepi
