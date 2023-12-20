@@ -1,9 +1,20 @@
-# add to crontab
+# how to remove old crontab
+
+crontab -r
+
+
+# how to install 
+
+su orangepi
+cd ~ && chmod +x auto_check/check_pulse.sh && chmod +x auto_check/check_internet.sh && crontab -e
+
+
+# access crontab
+
 crontab -e
+
+
+# Add crontab
 
 * * * * * /home/orangepi/auto_check/check_pulse.sh
 */15 * * * * /home/orangepi/auto_check/check_internet.sh
-
-
-chmod +x auto_check/check_pulse.sh
-chmod +x auto_check/check_internet.sh
