@@ -1,9 +1,10 @@
 #!/bin/bash
-curl  http://google.com
+curl -s  http://google.com > /home/orangepi/auto_check/html.txt
 if [ $? -eq 0 ]; then
-    echo "Success"
+#    echo "Success"
 else
-    echo "Failure"
+    date
+    echo "reset LTE"
     gpio write 3 0
     sleep 5
     gpio write 3 1

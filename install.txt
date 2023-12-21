@@ -21,5 +21,5 @@ crontab -e
 
 # Add crontab
 
-* * * * * /home/orangepi/auto_check/check_pulse.sh
-*/15 * * * * /home/orangepi/auto_check/check_internet.sh
+* * * * * /home/orangepi/auto_check/check_pulse.sh >> /home/orangepi/auto_check/result.txt
+*/15 * * * * /home/orangepi/auto_check/check_internet.sh >> /home/orangepi/auto_check/result.txt
