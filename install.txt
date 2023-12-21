@@ -11,7 +11,7 @@ crontab -l
 # how to install 
 
 su orangepi
-cd ~ && chmod +x auto_check/check_pulse.sh && chmod +x auto_check/check_internet.sh && crontab -e
+cd ~ && git clone https://github.com/hanh-nn/auto_check.git && chmod +x auto_check/check_pulse.sh && chmod +x auto_check/check_internet.sh && crontab -e
 
 
 # access crontab
